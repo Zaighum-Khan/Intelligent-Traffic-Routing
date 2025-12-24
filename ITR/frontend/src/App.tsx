@@ -607,8 +607,8 @@ const TrafficRoutingSystem = () => {
     <div className="flex h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Sidebar */}
       <div className="w-80 bg-white shadow-2xl p-6 overflow-y-auto border-r border-gray-200">
-        <h1 className="text-2xl font-bold mb-1 text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Traffic Routing System</h1>
-        <p className="text-xs text-gray-500 mb-4 font-medium">Python Backend + React Frontend</p>
+        <h1 className="text-2xl font-bold mb-1 text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Intelligent Traffic Routing</h1>
+        <p className="text-xs text-gray-500 mb-4 font-medium"> </p>
 
         {/* Backend Status */}
         <div className={`mb-4 p-3 rounded-lg flex items-center gap-2 text-sm font-medium shadow-sm ${
@@ -660,14 +660,14 @@ const TrafficRoutingSystem = () => {
         {/* Edge Selection Tip */}
         {mode === 'edge' && (
           <div className="mb-6 p-4 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200 shadow-sm">
-            <p className="text-xs font-semibold text-indigo-700 mb-2">💡 Tip:</p>
-            <p className="text-xs text-gray-600">Click on edge labels to select and edit their weights below!</p>
+            <p className="text-xs font-semibold text-indigo-700 mb-2">💡 Note:</p>
+            <p className="text-xs text-gray-600">Click on Edge Labels to select and edit/change their Weights (Distance and Traffic)!</p>
           </div>
         )}
 
         {/* Algorithm Selection */}
         <div className="mb-6">
-          <label className="block text-sm font-semibold text-gray-700 mb-2">Algorithm</label>
+          <label className="block text-sm font-semibold text-gray-700 mb-2">Algorithms</label>
           <div className="grid grid-cols-2 gap-2">
             <button
               onClick={() => setAlgorithm('dijkstra')}
@@ -696,13 +696,13 @@ const TrafficRoutingSystem = () => {
           >
             <option value="distance">Distance Only</option>
             <option value="traffic">Traffic Only</option>
-            <option value="combined">Combined (D + 2T)</option>
+            <option value="combined">Combined (Distance + Traffic)</option>
           </select>
         </div>
 
         {/* Traffic Increase */}
         <div className="mb-6">
-          <label className="block text-sm font-semibold text-gray-700 mb-2">Traffic Increase per Route: <span className="text-blue-600">{trafficIncrease}</span></label>
+          <label className="block text-sm font-semibold text-gray-700 mb-2">Traffic Increment: <span className="text-blue-600">{trafficIncrease}</span></label>
           <input
             type="range"
             min="1"
@@ -719,11 +719,11 @@ const TrafficRoutingSystem = () => {
             <div className="text-sm text-gray-700 mb-3 space-y-2">
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md"></div>
-                <span className="font-medium">Start: {startNode || 'Click a node'}</span>
+                <span className="font-medium">Starting Location: {startNode || 'Click a node'}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-br from-red-400 to-red-600 shadow-md"></div>
-                <span className="font-medium">End: {endNode || 'Click a node'}</span>
+                <span className="font-medium">Destination: {endNode || 'Click a node'}</span>
               </div>
             </div>
             <button
@@ -801,7 +801,7 @@ const TrafficRoutingSystem = () => {
                   className="w-full px-3 py-2 border-2 border-purple-200 rounded-lg text-sm font-medium focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"
                 />
               </div>
-              <p className="text-xs text-gray-500 bg-white/50 p-2 rounded">Click on edge labels to select different roads</p>
+              <p className="text-xs text-gray-500 bg-white/50 p-2 rounded">Click on Edge Labels to Select Different Roads</p>
             </div>
           </div>
         )}
@@ -894,7 +894,7 @@ const TrafficRoutingSystem = () => {
               {routeHistory.length === 0 ? (
                 <div className="text-center py-12 text-gray-500">
                   <History size={48} className="mx-auto mb-4 opacity-50" />
-                  <p className="font-medium">No routes in history yet</p>
+                  <p className="font-medium">No routes in History yet</p>
                   <p className="text-sm mt-2">Calculate some routes to see them here!</p>
                 </div>
               ) : (
