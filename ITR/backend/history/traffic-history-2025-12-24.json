@@ -1,0 +1,158 @@
+[
+  {
+    "timestamp": "2025-12-24 05:45:19",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 45,
+    "totalTraffic": 52
+  },
+  {
+    "timestamp": "2025-12-24 05:45:18",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 45
+  },
+  {
+    "timestamp": "2025-12-24 05:45:18",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 45,
+    "totalTraffic": 42
+  },
+  {
+    "timestamp": "2025-12-24 05:45:17",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 35
+  },
+  {
+    "timestamp": "2025-12-24 05:45:17",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 45,
+    "totalTraffic": 32
+  },
+  {
+    "timestamp": "2025-12-24 05:45:16",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 25
+  },
+  {
+    "timestamp": "2025-12-24 05:45:16",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 45,
+    "totalTraffic": 22
+  },
+  {
+    "timestamp": "2025-12-24 05:45:15",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 15
+  },
+  {
+    "timestamp": "2025-12-24 05:45:15",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 45,
+    "totalTraffic": 12
+  },
+  {
+    "timestamp": "2025-12-24 05:45:14",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 5
+  },
+  {
+    "timestamp": "2025-12-24 05:44:24",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N3",
+      "N4"
+    ],
+    "algorithm": "astar",
+    "totalDistance": 45,
+    "totalTraffic": 2
+  },
+  {
+    "timestamp": "2025-12-24 05:44:11",
+    "from_": null,
+    "to": "N4",
+    "path": [
+      "N1",
+      "N2",
+      "N4"
+    ],
+    "algorithm": "dijkstra",
+    "totalDistance": 44,
+    "totalTraffic": 2
+  }
+]
